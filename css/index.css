@@ -10,18 +10,29 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline-style: none;
+  box-sizing: border-box;
+}
+a {
+  color: #111;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
 }
 html {
   font-size: 10px;
 }
 body {
-  font-size: 1.3rem;
   font-family: "Pretendard", sans-serif;
+  font-size: 1.3rem;
   font-weight: 400;
-  flood-color: #000000;
   line-height: 1;
   letter-spacing: -0.64px;
   word-break: keep-all;
+  flood-color: #000000;
 }

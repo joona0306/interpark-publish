@@ -1,0 +1,196 @@
+/* 상단 영역 */
+.header {
+  position: relative;
+  /* 너비값은 안줘도 자동으로 100% */
+  width: 100%;
+  height: 160px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.header-inner {
+  position: relative;
+  width: 1280px;
+  height: 160px;
+  display: block;
+  /* block을 가운데 정렬한다 */
+  margin: 0px auto;
+  padding-top: 1px;
+}
+.header-top {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  /* header-inner pading값이 1이기 때문에 calc를 썼음, 28px로 바로 줘도 됨 */
+  margin-top: calc(29px - 1px);
+}
+.header-top-left {
+  position: relative;
+  width: 625px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  position: relative;
+  width: 150px;
+  height: 38px;
+  /* a 태그는 inline이다. 그래서 너비, 높이는 못 준다. */
+  display: block;
+  background-image: url("../images/logo.svg");
+}
+.header-search {
+  position: relative;
+  width: 454px;
+  height: 50px;
+  display: flex;
+  /* 세로 중앙 */
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 23px;
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+}
+/* 상품 검색 */
+.search-form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.search-word {
+  position: relative;
+  width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.search-btn {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/btn_search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  /* 커서 바꾸기 */
+  cursor: pointer;
+}
+
+.header-top-right {
+  position: relative;
+  width: 210px;
+  height: 50px;
+  display: flex;
+  /* 세로 중앙 */
+  align-items: center;
+}
+.member-menu {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.member-menu li {
+  position: relative;
+}
+.member-menu li a {
+  position: relative;
+  display: flex;
+  /* 세로 중앙 정렬 */
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.mypage-btn img {
+  margin-left: 5px;
+}
+
+.header-bottom {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  /* 세로 중앙 정렬 */
+  align-items: center;
+  margin-top: 30px;
+}
+.header-cate {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.header-cate li {
+  position: relative;
+  margin-right: 22px;
+}
+.header-cate li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.icon-hot::after {
+  content: "";
+  position: relative;
+  width: 23px;
+  height: 15px;
+  /* after와 befor는 안 적으면 기본적으로 inline이다.
+  그래서 width, height, margin, padding이 원활하지 않다.
+  그래서 많은 사람들이 display를 별도로 준다.
+  */
+  display: block;
+  margin-left: 4px;
+  background: url("../images/badge_hot.svg") no-repeat center;
+}
+
+.header-cate li a img {
+  position: relative;
+  width: 30px;
+  height: auto;
+  margin-right: 6px;
+}
+
+.header-today-menu {
+  position: relative;
+  display: flex;
+}
+
+/* 라인 넣기 */
+.header-today-menu::before {
+  content: "";
+  /* absolute는 부모를 기준으로 픽셀 이동 */
+  position: absolute;
+  top: 2px;
+  left: -11px;
+  width: 1px;
+  height: 16px;
+  display: block;
+  background-color: #e9e9e9;
+}
+
+.header-today-menu li {
+  position: relative;
+  margin-right: 22px;
+}
+.header-today-menu li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.header-today-menu li a img {
+  position: relative;
+  width: 30px;
+  /* 높이 안주면 자동으로 auto */
+  height: auto;
+  margin-right: 6px;
+}
