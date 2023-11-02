@@ -1,0 +1,27 @@
+{
+  "total": 6,
+  "visual_1": {
+    "file": "images/v1.png",
+    "url": "a.html"
+  },
+  "visual_2": {
+    "file": "images/v2.jpg",
+    "url": "b.html"
+  },
+  "visual_3": {
+    "file": "images/v3.jpg",
+    "url": "c.html"
+  },
+  "visual_4": {
+    "file": "images/v4.jpg",
+    "url": "d.html"
+  },
+  "visual_5": {
+    "file": "images/v5.jpg",
+    "url": "e.html"
+  },
+  "visual_6": {
+    "file": "images/v6.png",
+    "url": "f.html"
+  }
+}

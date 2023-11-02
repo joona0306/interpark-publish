@@ -1,0 +1,75 @@
+{
+  "total": 9,
+  "good_1": {
+    "image": "images/tour_1.jpg",
+    "badge": "베스트셀러",
+    "benefit": "최다판매 상품",
+    "place": "[부산-하노이 5일]★하노이/하롱베이+옌뜨 5일★",
+    "price": 679000,
+    "url": "b.html"
+  },
+  "good_2": {
+    "image": "images/tour_2.jpg",
+    "badge": "강력특가",
+    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
+    "place": "해운대 썬클라우드 호텔",
+    "price": 70000,
+    "url": "b.html"
+  },
+  "good_3": {
+    "image": "images/tour_3.webp",
+    "badge": "강력특가",
+    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
+    "place": "해운대 썬클라우드 호텔",
+    "price": 70000,
+    "url": "b.html"
+  },
+  "good_4": {
+    "image": "images/tour_4.webp",
+    "badge": "강력특가",
+    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
+    "place": "해운대 썬클라우드 호텔",
+    "price": 70000,
+    "url": "b.html"
+  },
+  "good_5": {
+    "image": "images/tour_5.jpg",
+    "badge": "강력특가",
+    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
+    "place": "해운대 썬클라우드 호텔",
+    "price": 70000,
+    "url": "b.html"
+  },
+  "good_6": {
+    "image": "images/tour_6.webp",
+    "badge": "강력특가",
+    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
+    "place": "해운대 썬클라우드 호텔",
+    "price": 70000,
+    "url": "b.html"
+  },
+  "good_7": {
+    "image": "images/tour_7.jpg",
+    "badge": "강력특가",
+    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
+    "place": "해운대 썬클라우드 호텔",
+    "price": 70000,
+    "url": "b.html"
+  },
+  "good_8": {
+    "image": "images/tour_8.jpg",
+    "badge": "강력특가",
+    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
+    "place": "해운대 썬클라우드 호텔",
+    "price": 70000,
+    "url": "b.html"
+  },
+  "good_9": {
+    "image": "images/tour_9.jpg",
+    "badge": "강력특가",
+    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
+    "place": "해운대 썬클라우드 호텔",
+    "price": 70000,
+    "url": "b.html"
+  }
+}

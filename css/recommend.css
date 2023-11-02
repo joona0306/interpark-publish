@@ -1,0 +1,158 @@
+.recommend {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 90px;
+  /* background-color: yellow; */
+}
+.recommend-inner {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+.recommend-header {
+  position: relative;
+}
+.recommend-title {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+.recommend-txt {
+  position: relative;
+  display: block;
+  font-size: 1.8rem;
+  color: #a7a9a7;
+  text-align: center;
+}
+
+.recommend-main {
+  position: relative;
+  padding: 25px 0;
+}
+.recommend-category {
+  position: relative;
+  display: flex;
+  /* 가운데 정렬 */
+  justify-content: center;
+}
+
+.recommend-list {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.recommend-list li {
+  position: relative;
+}
+
+.recommend-cate-btn {
+  position: relative;
+  display: block;
+  padding: 0 20px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 42px;
+  color: #111;
+  cursor: pointer;
+  border-radius: 27px;
+}
+.recommend-cate-btn-active {
+  border: 1px solid transparent !important;
+  background-color: #333 !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+
+.recommend-slide-wrap {
+  position: relative;
+  height: 425px;
+  margin-top: 23px;
+  /* background-color: yellowgreen; */
+}
+.recommend-slide-item {
+  position: relative;
+  height: 425px;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+.recommend-link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.recommend-img {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+}
+.recommend-img img {
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recommend-info {
+  position: relative;
+  height: calc(100% - 310px);
+  padding: 22px 20px;
+}
+.recommend-good-list {
+  position: relative;
+}
+.recommend-good-list li {
+  position: relative;
+}
+.recommend-good-info-price {
+  position: relative;
+  /* 1줄 말줄임 */
+  overflow: hidden;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #111;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.recommend-good-info-price b {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ef3e43;
+}
+.recommend-good-info-price em {
+  position: relative;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.recommend-good-info-desc {
+  position: relative;
+  display: -webkit-box;
+  margin-top: 10px;
+  /* 2줄이상 말줄임 */
+  overflow: hidden;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #111;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.recommend-footer {
+  position: relative;
+}

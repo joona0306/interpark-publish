@@ -1,1 +1,42 @@
-/* 기타등등 css */
+/* 슬라이드 좌우 버튼 */
+/* 버튼 숨기기 */
+.slide-prev-btn.swiper-button-disabled {
+  display: none;
+}
+.slide-next-btn.swiper-button-disabled {
+  display: none;
+}
+
+.slide-prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #e3e2e3;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  /* 내용물만 옴겨준다. */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.slide-prev-btn img {
+  transform: rotateY(180deg);
+}
+.slide-next-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #e3e2e3;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  /* 내용물만 옴겨준다. */
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+}

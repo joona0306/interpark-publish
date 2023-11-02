@@ -1,0 +1,82 @@
+.book {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 90px;
+    background-color: yellow;
+  }
+  .book-inner {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .book-header {
+    position: relative;
+  }
+  .book-title {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+  }
+  .book-txt {
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    color: #a7a9a7;
+    text-align: center;
+  }
+  
+  .book-main {
+    position: relative;
+    padding: 25px 0;
+  }
+  .book-category {
+    position: relative;
+    display: flex;
+    /* 가운데 정렬 */
+    justify-content: center;
+  }
+  
+  .book-list {
+    position: relative;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  .book-list li {
+    position: relative;
+  }
+  
+  .book-cate-btn {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 42px;
+    color: #111;
+    cursor: pointer;
+    border-radius: 27px;
+  }
+  .book-cate-btn-active {
+    border: 1px solid transparent !important;
+    background-color: #333 !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+  }
+  
+  .book-slide-wrap {
+    position: relative;
+    margin-top: 23px;
+    height: 425px;
+    background-color: yellowgreen;
+  }
+  
+  .book-footer {
+    position: relative;
+  }
+  

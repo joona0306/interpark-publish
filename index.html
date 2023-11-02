@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>인터파크</title>
+
+    <!-- Swiper JS : 1. 기능을 먼저 불러들임 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script src="js/visual.js"></script>
+    <script src="js/recommend.js"></script>
+    <script src="js/tour.js"></script>
+    
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    
     <link rel="stylesheet" href="css/reset.css" />
+    
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-     <div class="wrap">
+    <div class="wrap">
       <!-- 상단 영역 -->
       <header class="header">
         <!-- 레이아웃 : div -->
@@ -106,61 +114,8 @@
             <!-- Swiper -->
             <div class="swiper visual-slide">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <!-- 실제 내용 배치 Slide 1 -->
-                  <div class="visual-slide-item">
-                    <a href="#">
-                      <img src="images/v1.png" alt="">
-                    </a>
-                  </div>
-
-                </div>
-                <div class="swiper-slide">
-                  <!-- 실제 내용 배치 Slide 2 -->
-                  <div class="visual-slide-item">
-                    <a href="#">
-                      <img src="images/v2.jpg" alt="">
-                    </a>
-                  </div>
-
-                </div>
-                <div class="swiper-slide">
-                  <!-- 실제 내용 배치 Slide 3 -->
-                  <div class="visual-slide-item">
-                    <a href="#">
-                      <img src="images/v3.jpg" alt="">
-                    </a>
-                  </div>
-
-                </div>
-                <div class="swiper-slide">
-                  <!-- 실제 내용 배치 Slide 4 -->
-                  <div class="visual-slide-item">
-                    <a href="#">
-                      <img src="images/v4.jpg" alt="">
-                    </a>
-                  </div>
-
-                </div>
-                <div class="swiper-slide">
-                  <!-- 실제 내용 배치 Slide 5 -->
-                  <div class="visual-slide-item">
-                    <a href="#">
-                      <img src="images/v5.jpg" alt="">
-                    </a>
-                  </div>
-
-                </div>
-                <div class="swiper-slide">
-                  <!-- 실제 내용 배치 Slide 6 -->
-                  <div class="visual-slide-item">
-                    <a href="#">
-                      <img src="images/v6.png" alt="">
-                    </a>
-
-                  </div>                
-              </div>
-            </div> 
+                <!-- 외부 데이터 연동 -->            
+              </div> 
             </div>
             <!--  swiper Navigation -->
             <button class="visual-slide-prev"></button>
@@ -168,38 +123,1114 @@
           </div>
         </section>
         <!--// 비주얼 슬라이드 영역 -->
+        
+        <!-- 쇼핑 추천 상품 영역 -->
+        <section class="recommend">
+          <div class="recommend-inner">
+            
+            <div class="recommend-header">
+              <h2 class="recommend-title">쇼핑추천</h2>
+              <span class="recommend-txt">할인이 쎄다! 지금, 특가 상품을 확인하세요.</span>
+            </div>
+            
+            <div class="recommend-main">
+              <div class="recommend-category">
+                <ul class="recommend-list">
+                  <li>
+                    <button class="recommend-cate-btn recommend-cate-btn-active">쎈딜</button>
+                  </li>
+                  <li>
+                    <button class="recommend-cate-btn">베스트</button>
+                  </li>
+                  <li>
+                    <button class="recommend-cate-btn">블프데이</button>
+                  </li>
+                  <li>
+                    <button class="recommend-cate-btn">디지털프라자</button>
+                  </li>
+                  <li>
+                    <a href="#" class="recommend-cate-btn">소담상회</a>                    
+                  </li>
+                </ul>
+              </div>
+              
+              <!-- 추천 상품 슬라이드 -->
+              <div class="recommend-slide-wrap">
+                
+                <!-- Swiper -->
+                <div class="swiper recommend-slide">
+                  <div class="swiper-wrapper">
+                    <!-- 외부 데이터 연동 -->
+                  </div>
+                </div>
+                <!-- 좌, 우 이동버튼 : 너무 자주 재활용 됨 -->
+                <!-- 그래서, 재활용 가능하도록 별도(공통) css 작업 진행 -->
+                <button class="slide-prev-btn">
+                  <img src="images/slider_arrow.svg" alt="">
+                </button>
+                <button class="slide-next-btn">
+                  <img src="images/slider_arrow.svg" alt="">
+                </button>
+              </div>
+              <!-- //추천 상품 슬라이드 -->
+            </div>
+            
+            <div class="recommend-footer">
+
+            </div>
+          
+          </div>
+        </section>
+        <!--//쇼핑 추천 상품 영역 -->
+
+        <!-- 투어 특가 영역 -->
+        <section class="tour">
+          <div class="tour-inner">
+            
+            <div class="tour-header">
+              <h2 class="tour-title">투어 특가</h2>
+              <span class="tour-txt">해외여행은 인터파크다</span>
+            </div>
+              
+            <div class="tour-main">
+              <div class="tour-category">
+                <ul class="tour-list">
+                  <li>
+                    <button class="tour-cate-btn tour-cate-btn-active">망설이면 품절</button>
+                  </li>
+                  <li>
+                    <button class="tour-cate-btn">패키지</button>
+                  </li>
+                  <li>
+                    <button class="tour-cate-btn">국내숙소</button>
+                  </li>
+                  <li>
+                    <button class="tour-cate-btn">해외숙소</button>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 투어 슬라이드 -->
+              <div class="tour-slide-wrap">
+                
+                <!-- Swiper -->
+                <div class="swiper tour-slide">
+                  <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                      
+                      <div class="tour-slide-item">
+                        <a href="#" class="tour-link">
+                          <div class="tour-img">
+                            <img src="images/tour_1.jpg" alt=""/>
+                          </div>
+                          <div class="tour-info">
+                            
+                            <div class="tour-badge">
+                              <i>베스트셀러</i>
+                            </div>
+                            
+                            <div class="tour-benefit">
+                              최다 판매상품
+                            </div>
+                            
+                            <div class="tour-place">
+                              [부산-하노이 5일]★가족여행최고★하노이/하롱베이+옌뜨 5일
+                            </div>
+                            
+                            <div class="tour-price">
+                              <em>679,000</em> 
+                              <span>원~</span>
+                            </div>
+
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="tour-slide-item">
+                        <a href="#" class="tour-link">
+                          <div class="tour-img">
+                            <img src="images/tour_2.jpg" alt=""/>
+                          </div>
+                          <div class="tour-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="tour-slide-item">
+                        <a href="#" class="tour-link">
+                          <div class="tour-img">
+                            <img src="images/tour_3.webp" alt=""/>
+                          </div>
+                          <div class="tour-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="tour-slide-item">
+                        <a href="#" class="tour-link">
+                          <div class="tour-img">
+                            <img src="images/tour_4.webp" alt=""/>
+                          </div>
+                          <div class="tour-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="tour-slide-item">
+                        <a href="#" class="tour-link">
+                          <div class="tour-img">
+                            <img src="images/tour_5.jpg" alt=""/>
+                          </div>
+                          <div class="tour-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="tour-slide-item">
+                        <a href="#" class="tour-link">
+                          <div class="tour-img">
+                            <img src="images/tour_6.webp" alt=""/>
+                          </div>
+                          <div class="tour-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="tour-slide-item">
+                        <a href="#" class="tour-link">
+                          <div class="tour-img">
+                            <img src="images/tour_7.jpg" alt=""/>
+                          </div>
+                          <div class="tour-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="tour-slide-item">
+                        <a href="#" class="tour-link">
+                          <div class="tour-img">
+                            <img src="images/tour_8.jpg" alt=""/>
+                          </div>
+                          <div class="tour-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="tour-slide-item">
+                        <a href="#" class="tour-link">
+                          <div class="tour-img">
+                            <img src="images/tour_9.jpg" alt=""/>
+                          </div>
+                          <div class="tour-info"></div>
+                        </a>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- 좌, 우 이동버튼 : 너무 자주 재활용 됨 -->
+                <!-- 그래서, 재활용 가능하도록 별도(공통) css 작업 진행 -->
+                <button class="slide-prev-btn">
+                  <img src="images/slider_arrow.svg" alt="">
+                </button>
+                <button class="slide-next-btn">
+                  <img src="images/slider_arrow.svg" alt="">
+                </button>
+              </div>
+              <!-- //투어 슬라이드 -->
+            </div>
+            
+            <div class="tour-footer"></div>
+          
+          </div>
+        </section>
+        <!--// 투어 특가 영역 -->
+
+        <!-- 티켓 랭킹 영역 -->
+        <section class="ticket">
+          <div class="ticket-inner">
+
+            <div class="ticket-header">
+              <h2 class="ticket-title">티켓 랭킹</h2>
+              <span class="ticket-txt">오늘 뭐볼까? 지금 HOT한 공연</span>
+            </div>
+              
+            <div class="ticket-main">
+              <div class="ticket-category">
+                <ul class="ticket-list">
+                  <li>
+                    <button class="ticket-cate-btn ticket-cate-btn-active">뮤지컬</button>
+                  </li>
+                  <li>
+                    <button class="ticket-cate-btn">콘서트</button>
+                  </li>
+                  <li>
+                    <button class="ticket-cate-btn">스포츠</button>
+                  </li>
+                  <li>
+                    <button class="ticket-cate-btn">전시/행사</button>
+                  </li>
+                  <li>
+                    <button class="ticket-cate-btn">클래식/무용</button>
+                  </li>
+                  <li>
+                    <button class="ticket-cate-btn">아동/가족</button>
+                  </li>
+                  <li>
+                    <button class="ticket-cate-btn">연극</button>
+                  </li>
+                  <li>
+                    <button class="ticket-cate-btn">레저/캠핑</button>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 티켓 슬라이드 -->
+              <div class="ticket-slide-wrap">
+                
+                <!-- Swiper -->
+                <div class="swiper ticket-slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info">
+                            
+                            <ul class="ticket-good-list">
+                              <li>
+                                <span class="ticket-good-info-price">
+                                  <b>27%</b>
+                                  <em>7,500</em>
+                                  원
+                                </span>
+                              </li>
+                              <li>
+                                <!-- 한줄짜리는 span, 두줄이상이면 p -->
+                                <p class="ticket-good-info-desc">
+                                  [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                </p>
+                              </li>
+                            </ul>
+                          
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="tickett-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="ticket-slide-item">
+                        <a href="#" class="ticket-link">
+                          <div class="ticket-img">
+                            <img src="images/ticket1.gif" alt=""/>
+                          </div>
+                          <div class="ticket-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- 좌, 우 이동버튼 : 너무 자주 재활용 됨 -->
+                <!-- 그래서, 재활용 가능하도록 별도(공통) css 작업 진행 -->
+                <button class="slide-prev-btn">
+                  <img src="images/slider_arrow.svg" alt="">
+                </button>
+                <button class="slide-next-btn">
+                  <img src="images/slider_arrow.svg" alt="">
+                </button>
+              </div>
+              <!-- //티켓 슬라이드 -->
+            </div>
+            
+            <div class="ticket-footer"></div>
+
+          </div>
+        </section>
+        <!--// 티켓 랭킹 영역 -->
+
+        <!-- 인터파크 라이브 영역 -->
+        <section class="live">
+          <div class="live-inner">
+
+            <div class="live-header">
+              <img class="live-title" src="images/title_live.svg" alt="">
+            </div>
+            
+            <div class="live-main">
+
+              <!-- 라이브 슬라이드 -->
+              <div class="live-slide-wrap">
+                
+                <!-- Swiper -->
+                <div class="swiper live-slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info">
+                            
+                            <ul class="live-good-list">
+                              <li>
+                                <span class="live-good-info-price">
+                                  <b>27%</b>
+                                  <em>7,500</em>
+                                  원
+                                </span>
+                              </li>
+                              <li>
+                                <!-- 한줄짜리는 span, 두줄이상이면 p -->
+                                <p class="live-good-info-desc">
+                                  [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                </p>
+                              </li>
+                            </ul>
+                          
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="live-slide-item">
+                        <a href="#" class="live-link">
+                          <div class="live-img">
+                            <img src="images/live1.jpg" alt=""/>
+                          </div>
+                          <div class="live-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //라이브 슬라이드 -->
+
+            </div>
+            
+            <div class="live-footer">
+
+            </div>
+
+          </div>
+        </section>
+        <!--// 인터파크 라이브 영역 -->
+
+        <!-- 오늘의 도서 영역 -->
+        <section class="book">
+          <div class="book-inner">
+
+            <div class="book-header">
+              <h2 class="book-title">오늘의 도서</h2>
+              <span class="book-txt">지금 읽기 딱 좋은책, 놓치지 마세요!</span>
+            </div>
+              
+            <div class="book-main">
+              <div class="book-category">
+                <ul class="book-list">
+                  <li>
+                    <button class="book-cate-btn book-cate-btn-active">MD's pick</button>
+                  </li>
+                  <li>
+                    <button class="book-cate-btn">베스트셀러</button>
+                  </li>
+                  <li>
+                    <button class="book-cate-btn">신간추천</button>
+                  </li>
+                  <li>
+                    <button class="book-cate-btn">특가할인</button>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 도서 슬라이드 -->
+              <div class="book-slide-wrap">
+                
+                <!-- Swiper -->
+                <div class="swiper book-slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info">
+                            
+                            <ul class="recommend-good-list">
+                              <li>
+                                <span class="recommend-good-info-price">
+                                  <b>27%</b>
+                                  <em>7,500</em>
+                                  원
+                                </span>
+                              </li>
+                              <li>
+                                <!-- 한줄짜리는 span, 두줄이상이면 p -->
+                                <p class="recommend-good-info-desc">
+                                  [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                </p>
+                              </li>
+                            </ul>
+                          
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="recommend-slide-item">
+                        <a href="#" class="recommend-link">
+                          <div class="recommend-img">
+                            <img src="images/r1.jpg" alt=""/>
+                          </div>
+                          <div class="recommend-info"></div>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //도서 슬라이드 -->
+            </div>
+            
+            <div class="book-footer"></div>
+
+          </div>
+        </section>
+        <!--// 오늘의 도서 영역 -->
+        
+        <!-- 이벤트 영역 -->
+        <section class="event">
+          <div class="event-inner">
+
+            <div class="event-header">
+              <h2 class="event-title">이벤트</h2>
+              <span class="event-txt">인터파크에서 할인혜택을 꼭 챙기세요.</span>
+            </div>
+              
+            <div class="event-main">
+
+              <!-- 이벤트 슬라이드 -->
+              <div class="event-slide-wrap">
+                
+                <!-- Swiper -->
+                <div class="swiper event-slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="event-slide-item">
+                        <a href="#" class="event-link">
+                          <div class="event-img">
+                            <img src="images/jungso_basic.jpg" alt=""/>
+                          </div>
+                          
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //이벤트 슬라이드 -->
+            </div>
+            
+            <div class="event-footer"></div>
+
+          </div>
+        </section>
+        <!--// 이벤트 영역 -->
+
       </div>
       <!-- 하단 영역 -->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        
+      </footer>
     </div>
   </body>
  </script>
 </html>
 
-<script>
-  console.log(" html 태그 끝에 기재가 정말 좋은 자리 ");
-</script>
-<script>
-  // swiper 를 활용
-</script>
-
-<!-- Swiper JS : 1. 기능을 먼저 불러들임 -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
 <!-- Initialize Swiper : 2. 기능을 사용함 -->
 <script>
-  var swiper = new Swiper(".visual-slide", {
-    slidesPerView : 2,
-    spaceBetween : 24,
-    loop : true,
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-    },
-    speed : 500,
-    navigation: {
-        nextEl: ".visual-slide-next",
-        prevEl: ".visual-slide-prev",
+  const swiperTour = new Swiper(".tour-slide", {
+      slidesPerView: 3,
+      spaceBetween: 28,
+      // 좌우 버튼
+      navigation: {
+        nextEl: ".tour-slide-wrap .slide-next-btn",
+        prevEl: ".tour-slide-wrap .slide-prev-btn",
       },
+      // 3장씩 이동
+      slidesPerGroup: 3,
+    });
+  
+  const swiperTicket = new Swiper(".ticket-slide", {
+    slidesPerView: 4,
+    spaceBetween: 28,
+    // 좌우 버튼
+    navigation: {
+      nextEl: ".ticket-slide-wrap .slide-next-btn",
+      prevEl: ".ticket-slide-wrap .slide-prev-btn",
+    },
+    // 4장씩 이동
+    slidesPerGroup: 4,
+  });
+  const swiperLive = new Swiper(".live-slide", {
+    slidesPerView: 4,
+    spaceBetween: 28,
+    // 좌우 버튼
+    navigation: {
+      nextEl: ".live-slide-wrap .slide-next-btn",
+      prevEl: ".live-slide-wrap .slide-prev-btn",
+    },
+    // 4장씩 이동
+    slidesPerGroup: 4,
+  });
+  const swiperBook = new Swiper(".book-slide", {
+    slidesPerView: 4,
+    spaceBetween: 28,
+    // 좌우 버튼
+    navigation: {
+      nextEl: ".book-slide-wrap .slide-next-btn",
+      prevEl: ".book-slide-wrap .slide-prev-btn",
+    },
+    // 4장씩 이동
+    slidesPerGroup: 4,
+  });
+  const swiperEvent = new Swiper(".event-slide", {
+    slidesPerView: 4,
+    spaceBetween: 28,
+    // 좌우 버튼
+    navigation: {
+      nextEl: ".event-slide-wrap .slide-next-btn",
+      prevEl: ".event-slide-wrap .slide-prev-btn",
+    },
+    // 4장씩 이동
+    slidesPerGroup: 4,
   });
 </script>
+

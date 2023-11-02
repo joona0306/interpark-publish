@@ -1,0 +1,25 @@
+{
+  "total": 12,
+
+  "live_1": {
+    "live-info": {
+      "image": "images/live_1.jpg",
+      "state": "방송예정",
+      "title": "소담상회 X 에이브랩",
+      "url": "c.html"
+    },
+
+    "live-day": {
+      "date": "10월 31일 (화)",
+      "time": "16:00"
+    },
+
+    "live-good": {
+      "good_image": "images/live_2.jpg",
+      "good_title": "[10.31] ~",
+      "good_discount": 12,
+      "good_price": 35000,
+      "good_url": "good.html"
+    }
+  }
+}
