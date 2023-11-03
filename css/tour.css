@@ -174,4 +174,6 @@
 
 .tour-footer {
   position: relative;
+  padding: 0;
+  text-align: center;
 }

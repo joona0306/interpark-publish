@@ -9,6 +9,10 @@
 // window.onload = function () {};
 
 window.addEventListener("load", function () {
+  // 가격 콤마적용 기능
+  function formatPriceWithCommas(price) {
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
   // console.log("추천상품코딩");
   // 추천 상품 슬라이드 기능
   // 글로써 코딩 시나리오 작성 : 의사코드
@@ -73,10 +77,12 @@ window.addEventListener("load", function () {
       if (i === _res.total - 1) {
         tempTag = `
           <div class="swiper-slide">
-            <a href="${obj.url}">
-              <img src="images/btn_moreproduct.svg" art=""/>
-              전체보기
-            </a>  
+            <div class="recommend-more">            
+              <a href="${obj.url}">              
+                <i></i>
+                전체보기
+              </a>
+            </div>                
           </div>
         `;
       } else {
@@ -122,24 +128,6 @@ window.addEventListener("load", function () {
 
     // console.log(htmlRecommendTag);
     showHtmlTag(htmlRecommendTag);
-  }
-
-  // 가격 콤마적용 기능
-  function formatPriceWithCommas(price) {
-    // if 조건문
-    // 가격을 숫자로 변환
-    // price = parseFloat(price);
-
-    // 가격이 숫자가 아니면 그대로 반환
-    // if (isNaN(price)) {
-    //   return price;
-    // } else {
-    //   return price.toLocaleString();
-    // }
-
-    // 삼항연산
-    price = parseFloat(price);
-    return price ? price.toLocaleString() : price;
   }
 
   // html 출력 전용 기능을 만들자.

@@ -1,0 +1,81 @@
+/* 하단영역 */
+.footer {
+  position: relative;
+}
+.footer-inner {
+  position: relative;
+  margin: 0 auto;
+  /* background-color: palegoldenrod; */
+}
+.footer-header {
+  position: relative;
+  margin: 0 auto 0.4rem;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  height: 5rem;
+  text-align: center;
+}
+.footer-policy {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  width: 1280px;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer-policy li {
+  position: relative;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 3.1rem;
+}
+.footer-policy li::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: 0;
+  transform: translateY(-50%);
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  vertical-align: middle;
+  background: rgba(0, 0, 0, 0.3);
+}
+.footer-policy li:first-child {
+  position: relative;
+  padding-left: 0;
+}
+.footer-policy li:first-child::before {
+  content: none;
+}
+.footer-policy li:last-child {
+  position: relative;
+  padding-right: 0;
+}
+.footer-policy button {
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.footer-policy button::after {
+  content: "";
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.6rem;
+  margin-left: 0.4rem;
+  background: url("../images/footer_arrow.svg") no-repeat center;
+}
+
+.footer-main {
+  position: relative;
+  padding: 0 0 5rem;
+}

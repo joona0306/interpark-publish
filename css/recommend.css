@@ -153,6 +153,31 @@
   -webkit-box-orient: vertical;
 }
 
+.recommend-more {
+  position: relative;
+  margin-top: 60%;
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+.recommend-more a {
+  position: relative;
+  display: block;
+}
+.recommend-more i {
+  position: relative;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto 0.6rem;
+  background: url("../images/btn_moreproduct.svg") no-repeat center;
+}
+
 .recommend-footer {
   position: relative;
+  padding: 0;
+  text-align: center;
 }
+

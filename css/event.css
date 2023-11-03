@@ -1,8 +1,8 @@
 .event {
   position: relative;
   padding-top: 0;
-  padding-bottom: 90px;
-  background-color: orchid;
+  padding-bottom: 60px;
+  /* background-color: orchid; */
 }
 .event-inner {
   position: relative;
@@ -73,7 +73,7 @@
   position: relative;
   height: 350px;
   margin-top: 23px;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 .event-slide-item {
   position: relative;
@@ -103,8 +103,4 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.event-footer {
-  position: relative;
 }
