@@ -24,16 +24,16 @@ window.addEventListener("load", function () {
     // for 은 반복을 하는데 true 인 경우만 반복한다.
     for (let i = 1; i <= visualRes.total; i++) {
       let temp = `
-    <div class="swiper-slide">
-        <div class="visual-slide-item">
-            <a href="${visualRes["visual_" + i].url}">
-                <img src="${visualRes["visual_" + i].file}" alt="${
+      <div class="swiper-slide">
+          <div class="visual-slide-item">
+              <a href="${visualRes["visual_" + i].url}">
+                  <img src="${visualRes["visual_" + i].file}" alt="${
         visualRes["visual_" + i].url
       }" />
-            </a>
-        </div>
-    </div>
-  `;
+              </a>
+          </div>
+      </div>
+    `;
 
       visualHtml += temp;
     }

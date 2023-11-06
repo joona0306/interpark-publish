@@ -104,8 +104,7 @@ window.addEventListener("load", function () {
                         원
                       </span>
                     </li>
-                    <li>
-                      <!-- 한줄짜리는 span, 두줄이상이면 p -->
+                    <li>                      
                       <p class="recommend-good-info-desc">
                       ${obj.desc}
                       </p>

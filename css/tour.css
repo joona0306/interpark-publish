@@ -3,7 +3,7 @@
   width: 100%;
   padding-top: 0;
   padding-bottom: 90px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 .tour-inner {
   position: relative;
@@ -73,7 +73,7 @@
   position: relative;
   margin-top: 23px;
   height: 355px;
-  background-color: pink;
+  /* background-color: pink; */
 }
 .tour-slide-item {
   position: relative;

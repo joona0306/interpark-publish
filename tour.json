@@ -6,70 +6,70 @@
     "benefit": "최다판매 상품",
     "place": "[부산-하노이 5일]★하노이/하롱베이+옌뜨 5일★",
     "price": 679000,
-    "url": "b.html"
+    "url": "a.html"
   },
   "good_2": {
     "image": "images/tour_2.jpg",
-    "badge": "강력특가",
-    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
-    "place": "해운대 썬클라우드 호텔",
-    "price": 70000,
+    "badge": "룸UP",
+    "benefit": "스탠다드→이그제큐티브 트윈",
+    "place": "제이원 호텔",
+    "price": 72400,
     "url": "b.html"
   },
   "good_3": {
     "image": "images/tour_3.webp",
-    "badge": "강력특가",
-    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
-    "place": "해운대 썬클라우드 호텔",
-    "price": 70000,
-    "url": "b.html"
+    "badge": "타이베이",
+    "benefit": "조식포함 특가",
+    "place": "타이페이 가든 호텔",
+    "price": 385907,
+    "url": "c.html"
   },
   "good_4": {
     "image": "images/tour_4.webp",
-    "badge": "강력특가",
-    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
-    "place": "해운대 썬클라우드 호텔",
+    "badge": "베스트셀러",
+    "benefit": "2명이상 예약시 출발 보장",
+    "place": "코타키나발루 판보르네오VS수트라하버 호핑투어+시내관광5일",
     "price": 70000,
-    "url": "b.html"
+    "url": "d.html"
   },
   "good_5": {
     "image": "images/tour_5.jpg",
-    "badge": "강력특가",
-    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
-    "place": "해운대 썬클라우드 호텔",
-    "price": 70000,
-    "url": "b.html"
+    "badge": "BEST",
+    "benefit": "이재성,이강인,손흥민 경기 직관",
+    "place": "축구여행 기획자와 떠나는 유럽 3개국 축구배낭여행_10박12일",
+    "price": 5599000,
+    "url": "e.html"
   },
   "good_6": {
     "image": "images/tour_6.webp",
-    "badge": "강력특가",
-    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
-    "place": "해운대 썬클라우드 호텔",
-    "price": 70000,
-    "url": "b.html"
+    "badge": "후쿠오카",
+    "benefit": "5성급, 2023년8월 오픈 초신상 호텔",
+    "place": "더 로얄 파크 캔버스 후쿠오카 나카스",
+    "price": 163200,
+    "url": "f.html"
   },
   "good_7": {
     "image": "images/tour_7.jpg",
-    "badge": "강력특가",
-    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
-    "place": "해운대 썬클라우드 호텔",
-    "price": 70000,
-    "url": "b.html"
+    "badge": "국적기직항",
+    "benefit": "스테디셀로, 서유럽입문서",
+    "place": "[서유럽 4국10일] 3대박물관+융프라우+베르사이유+9대특식",
+    "price": 3599000,
+    "url": "g.html"
   },
   "good_8": {
     "image": "images/tour_8.jpg",
     "badge": "강력특가",
-    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
-    "place": "해운대 썬클라우드 호텔",
-    "price": 70000,
-    "url": "b.html"
+    "benefit": "스탠다드 더블 (넷플릭스 스트리밍 서비스/개인ID 필요)",
+    "place": "호텔 포코 성수",
+    "price": 106700,
+    "url": "i.html"
   },
   "good_9": {
     "image": "images/tour_9.jpg",
-    "badge": "강력특가",
-    "benefit": "디럭스 킹, 부분바다 전망, 리뉴얼 객실",
-    "place": "해운대 썬클라우드 호텔",
-    "price": 70000,
-    "url": "b.html"
+    "badge": "오사카",
+    "benefit": "5성급, 난바역과 연결",
+    "place": "스위소텔 난카이 오사카 호텔",
+    "price": 193526,
+    "url": "j.html"
   }
 }
